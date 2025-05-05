@@ -1,0 +1,9 @@
+[package]
+name = "iggy_stream_wrapper"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+iggy = "0.6.210"
+log = "0.4.27"
+tokio = "1.44.2"
