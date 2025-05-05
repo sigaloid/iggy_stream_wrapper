@@ -36,6 +36,11 @@ let message_stream = MessageStream::new(
     10,
 );
 
-// Using the default method
-let default_message_stream = MessageStream::default(client, stream_id, topic_id);
+// OR: Using the default method
+let message_stream = MessageStream::default(client, stream_id, topic_id);
+
+while let Some(message) = message_stream.next().await? {
+    // Process message
+}
+
 ```
